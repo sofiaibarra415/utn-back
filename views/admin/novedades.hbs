@@ -5,10 +5,12 @@
     </div>
     <div class="row">
         <div class="col-7">
-            <h3>Experiencias</h3>
+            <h3>Contanos tus experiencia siguiendo los planes de #SofiaNutrición y comparti tu foto de alguna receta que
+                hayas hecho!</h3>
         </div>
         <div class="col-5 text-end">
-            <a class="btn btn-success" href="/admin/novedades/agregar"><i class="fa fa-plus" aria-hiden="true"></i> Nuevo</a>
+            <a class="btn btn-success" href="/admin/novedades/agregar"><i class="fa fa-plus" aria-hiden="true"></i>
+                Nuevo</a>
         </div>
     </div>
     <div class="row">
@@ -16,10 +18,10 @@
             <table class="table">
                 <thead>
                     <tr class="table-dark">
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Testimonio</th>
-
-                        <th class="text-end">Acciones</th>
+                        <th scope="col" style="width: 150px;">Nombre</th>
+                        <th scope="col" style="width: 700px;">Testimonio</th>
+                        <th scope="col">Recetas</th>
+                        <th class="text-end" style="width: 150px;">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -27,9 +29,12 @@
                     <tr>
                         <th scope="row">{{nombre}}</th>
                         <td>{{testimonio}}</td>
-                        <td class="text-end" >
-                            <a class="btn btn-secondary" href="/admin/novedades/modificar/{{id}}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                            <a class="btn btn-secondary" href="/admin/novedades/eliminar/{{id}}"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                        <td>{{{imagen}}}</td>
+                        <td class="text-end">
+                            <a class="btn btn-secondary" href="/admin/novedades/modificar/{{id}}"><i
+                                    class="fa fa-pencil" aria-hidden="true"></i></a>
+                            <a class="btn btn-secondary" href="/admin/novedades/eliminar/{{id}}"><i class="fa fa-trash"
+                                    aria-hidden="true"></i></a>
                         </td>
                     </tr>
                     {{/each}}
